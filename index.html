@@ -64,8 +64,12 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center gap-2">
                     <span class="material-symbols-outlined text-primary text-3xl">hot_tub</span>
-                    <span
-                        class="font-heading font-bold text-xl tracking-wide uppercase text-gray-900 dark:text-white">UralTubs</span>
+                    <div class="flex flex-col leading-none">
+                        <span
+                            class="font-heading font-bold text-sm tracking-wide uppercase text-gray-900">Уральские</span>
+                        <span class="font-heading font-bold text-sm tracking-wide uppercase text-gray-900">Банные
+                            Чаны</span>
+                    </div>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
@@ -163,7 +167,7 @@
                                 <div class="text-left leading-none">
                                     <h4
                                         class="text-[10px] font-bold text-gray-900 dark:text-white uppercase tracking-wider">
-                                        UralTubs</h4>
+                                        УРАЛЬСКИЕ БАННЫЕ ЧАНЫ</h4>
                                     <p class="text-[8px] text-gray-500 uppercase tracking-widest">ЧАНЫ</p>
                                 </div>
                             </div>
@@ -335,26 +339,25 @@
                     });
                 });
             }
-        });
 
-        // Teaser & Sticky CTA Logic
-        window.addEventListener('scroll', () => {
-            const cta = document.getElementById('sticky-cta');
-            if (window.scrollY > 300) {
-                cta.classList.remove('translate-y-24', 'opacity-0');
-            } else {
-                cta.classList.add('translate-y-24', 'opacity-0');
-            }
-        });
+            // Teaser & Sticky CTA Logic
+            window.addEventListener('scroll', () => {
+                const cta = document.getElementById('sticky-cta');
+                if (window.scrollY > 300) {
+                    cta.classList.remove('translate-y-24', 'opacity-0');
+                } else {
+                    cta.classList.add('translate-y-24', 'opacity-0');
+                }
+            });
 
-        // Redirect on Teaser Click
-        document.querySelectorAll('.teaser-trigger').forEach(btn => {
-            btn.addEventListener('click', () => {
-                alert('Полная конфигурация доступна в калькуляторе!');
-                // window.location.href = '...'; 
+            // Redirect on Teaser Click
+            document.querySelectorAll('.teaser-trigger').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    alert('Полная конфигурация доступна в калькуляторе!');
+                    // window.location.href = '...'; 
+                });
             });
         });
-    });
     </script>
 </body>
 
