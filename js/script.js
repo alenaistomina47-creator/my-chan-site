@@ -72,9 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         const cta = document.getElementById('sticky-cta');
         if (window.scrollY > 300) {
-            cta.classList.remove('translate-y-24', 'opacity-0');
+            cta.classList.remove('translate-y-full', 'opacity-0');
         } else {
-            cta.classList.add('translate-y-24', 'opacity-0');
+            cta.classList.add('translate-y-full', 'opacity-0');
         }
     });
 

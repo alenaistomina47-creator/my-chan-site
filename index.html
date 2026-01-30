@@ -34,7 +34,7 @@
                         28 человек сегодня стали ближе к мечте
                     </div>
                     <h1
-                        class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold leading-tight text-gray-900 dark:text-white uppercase break-words">
+                        class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-heading font-bold leading-tight text-gray-900 dark:text-white uppercase break-words [text-wrap:balance]">
                         Инвестируйте в здоровье семьи: <span class="text-primary block sm:inline">Ваш идеальный банный
                             чан</span>
                     </h1>
@@ -189,15 +189,15 @@
 
     <!-- Sticky Mobile CTA -->
     <div id="sticky-cta"
-        class="fixed bottom-6 left-4 right-4 z-50 transform translate-y-24 opacity-0 transition-all duration-500 lg:hidden">
+        class="fixed bottom-0 left-0 right-0 z-50 transform translate-y-full opacity-0 transition-all duration-500 lg:hidden p-4 pb-[calc(1rem+env(safe-area-inset-bottom))] bg-gradient-to-t from-white/90 to-transparent dark:from-black/90 pt-8">
         <a href="https://t.me/Ural_Master_bot"
-            class="flex items-center justify-between w-full bg-primary text-white p-4 rounded-2xl shadow-2xl shadow-orange-500/40 font-bold active:scale-95 transition-transform">
+            class="flex items-center justify-between w-full bg-primary text-white p-4 rounded-2xl shadow-xl shadow-orange-500/30 font-bold active:scale-95 transition-transform border border-white/10">
             <div class="flex flex-col text-left">
-                <span class="text-[10px] opacity-90 uppercase tracking-wider">Рассчитай стоимость</span>
-                <span class="text-lg leading-none">Своего чана</span>
+                <span class="text-[10px] opacity-90 uppercase tracking-wider">Инвестиция в здоровье</span>
+                <span class="text-lg leading-none">Собрать чан мечты</span>
             </div>
-            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
-                <span class="material-symbols-outlined">arrow_forward</span>
+            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                <span class="material-symbols-outlined">chat</span>
             </div>
         </a>
     </div>
